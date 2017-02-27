@@ -42,11 +42,11 @@ for i in range(0, len(posList)):
         negList[i][2] = negList[i][1] + widthNegBox
 
         for j in range(0, len(posList)):
-            if not (negList[i][1] > posList[j][2] or negList[i][3] > posList[j][4] or negList[i][2] < posList[j][1] or negList[i][4] < posList[j][2]):
+            if negList[j][0] = negList[i][0] and not (negList[i][1] > posList[j][2] or negList[i][3] > posList[j][4] or negList[i][2] < posList[j][1] or negList[i][4] < posList[j][2]):
                 overlapFound = True
 
         for k in range(0, len(negList)):
-            if not (negList[i][1] > posList[k][2] or negList[i][3] > posList[k][4] or negList[i][2] < posList[k][1] or negList[i][4] < posList[k][2]):
+            if negList[j][0] = negList[i][0] and not (negList[i][1] > posList[k][2] or negList[i][3] > posList[k][4] or negList[i][2] < posList[k][1] or negList[i][4] < posList[k][2]):
                 overlapFound = True
 
 negativeData = csv.writer(open("negcoords.txt", "w", newline=''))
